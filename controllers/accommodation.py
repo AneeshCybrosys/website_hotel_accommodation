@@ -14,3 +14,8 @@ class WebsiteForm(http.Controller):
             'rooms': rooms
         })
         return request.render("website_hotel_accommodation.online_accommodation_form", values)
+
+    @http.route(['/accommodation/submit'], type='http', auth="public",
+                website=True)
+    def customer_form_submit(self, **post):
+        print(self.partners)

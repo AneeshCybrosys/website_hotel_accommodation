@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Website Accommodation Menu",
+    'name': "Website Hotel Accommodation",
 
     'summary': """
         Adds a menu hotel accommodation""",
