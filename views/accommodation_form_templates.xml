@@ -14,7 +14,7 @@
                                    t-att-value="request.csrf_token()"/>
                             <br/>
                             <h1>
-                                Hotel Room Booking
+                                Hotel Room Booking hgj
                             </h1>
                             <br/>
                             <div class="s_website_form_rows row s_col_no_bgcolor">
