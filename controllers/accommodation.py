@@ -20,7 +20,6 @@ class WebsiteForm(http.Controller):
                 website=True)
     def customer_form_submit(self, **post):
         names = request.httprequest.form.getlist('name')
-        # gender = request.httprequest.form.getlist('gender')
         ages = request.httprequest.form.getlist('age')
         guests = []
         for name, age in zip(names,ages):
@@ -39,8 +38,3 @@ class WebsiteForm(http.Controller):
             'booking': booking,
         }
         return request.render("website_hotel_accommodation.form_success", vals)
-
-    @http.route(['/guests'], type='http', auth="public",
-                website=True)
-    def add_guests(self, **post):
-        print(post, "yayaya")
