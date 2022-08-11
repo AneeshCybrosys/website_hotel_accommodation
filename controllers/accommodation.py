@@ -20,12 +20,19 @@ class WebsiteForm(http.Controller):
         booking = request.env['hotel.accommodation'].sudo().create({
             'partner_id': int(post.get('partner_id')),
             'room_id': int(post.get('room_id')),
-            # 'room_id.available': int(post.get('room_id')),
-            'check_in_date': post.get('accommodation_date')
+            'check_in_date': post.get('accommodation_date'),
+            'guest_ids': [(0, 0, {
+                'name': 'figure',
+            })]
         })
-        booking.room_id.available = False
+        # booking.room_id.available = False
         vals = {
             'booking': booking,
         }
+        print(booking,'booking',"vals",vals['booking'].id)
         return request.render("website_hotel_accommodation.form_success", vals)
 
+    @http.route(['/guests'], type='http', auth="public",
+                website=True)
+    def add_guests(self, **post):
+        print(post,"yayaya")

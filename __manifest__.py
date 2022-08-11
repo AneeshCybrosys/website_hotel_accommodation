@@ -17,5 +17,10 @@
     'data': [
         'views/website_accommodation_menu.xml',
         'views/accommodation_form_templates.xml',
-             ],
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'website_hotel_accommodation/static/src/js/accommodation.js',
+        ]
+    }
 }

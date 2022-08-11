@@ -13,9 +13,7 @@
                             <input type="hidden" name="csrf_token"
                                    t-att-value="request.csrf_token()"/>
                             <br/>
-                            <h1>
-                                Hotel Room Booking
-                            </h1>
+                            <h1>Hotel Room Booking</h1>
                             <br/>
                             <div class="s_website_form_rows row s_col_no_bgcolor">
                                 <div>
@@ -23,10 +21,10 @@
                                          data-type="char" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
-                                                   style="width: 200px"
+                                                   style="width: 150px"
                                                    for="studio1">
                                                 <span class="s_website_form_label_content">
-                                                    Partner
+                                                    Guest
                                                 </span>
                                                 <span class="s_website_form_mark">
                                                     *
@@ -46,12 +44,11 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="form-group col-12 s_website_form_field s_website_form_required"
                                          data-type="char" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
-                                                   style="width: 200px"
+                                                   style="width: 150px"
                                                    for="studio1">
                                                 <span class="s_website_form_label_content">
                                                     Room
@@ -74,36 +71,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div>
                                     <div class="form-group col-12 s_website_form_field s_website_form_required"
                                          data-type="char" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
-                                                   style="width: 200px"
-                                                   for="studio1">
-                                                <span class="s_website_form_label_content">
-                                                    Email
-                                                </span>
-                                                <span class="s_website_form_mark">
-                                                    *
-                                                </span>
-                                            </label>
-                                            <div class="col-sm">
-                                                <input id="email" type="email"
-                                                       class="form-control s_website_form_input"
-                                                       name="email"
-                                                       required="1"/>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                         data-type="char" data-name="Field">
-                                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                                            <label class="col-form-label col-sm-auto s_website_form_label"
-                                                   style="width: 200px"
+                                                   style="width: 150px"
                                                    for="studio1">
                                                 <span class="s_website_form_label_content">
                                                     Date
@@ -122,7 +94,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-group col-12 s_website_form_submit"
                                      data-name="Submit Button">
                                     <div style="width: 200px;"
@@ -138,15 +109,15 @@
             </div>
         </t>
     </template>
-
     <template id="form_success" name="Room Booked">
         <t t-call="website.layout">
             <div id="wrap">
                 <div class="container">
                     <div class="col-md-12">
-                        <div class="alert alert-success">
-                            Room Booked.
-                        </div>
+                        <br/>
+                        <div class="alert alert-success">Room Booked</div>
+                        <br/>
+                        <a href="/guests" data-json='vals'>Add Guests</a>
                     </div>
                 </div>
             </div>
