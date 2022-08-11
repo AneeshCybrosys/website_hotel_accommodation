@@ -94,6 +94,52 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                         data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 150px"
+                                                   for="studio1">
+                                                <span class="s_website_form_label_content">
+                                                    Add Guests
+                                                </span>
+                                                <span class="s_website_form_mark">
+                                                    *
+                                                </span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input id="add_guests"
+                                                       type="checkbox">
+                                                </input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="table" style="display:none"
+                                         class="form-group col-12 s_website_form_field s_website_form_required"
+                                         data-type="char" data-name="Field">
+                                        <table class="table table-bordered table-striped table-hover table-condensed  text-center"
+                                               id="DyanmicTable">
+                                            <h3>Guests Detail</h3>
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        Guest Name
+                                                    </th>
+                                                    <th class="text-center">
+                                                        Age
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                        <input id="add_row" type="button"
+                                               value="Add Guest"/>
+                                    </div>
+
+
+                                </div>
                                 <div class="form-group col-12 s_website_form_submit"
                                      data-name="Submit Button">
                                     <div style="width: 200px;"
@@ -117,7 +163,6 @@
                         <br/>
                         <div class="alert alert-success">Room Booked</div>
                         <br/>
-                        <a href="/guests" data-json='vals'>Add Guests</a>
                     </div>
                 </div>
             </div>

@@ -12,14 +12,14 @@
     'author': "Minions 6",
 
     'version': '15.0.1.0',
-    'depends': ['website', 'hotel_room_management'],
+    'depends': ['website', 'web', 'hotel_room_management'],
 
     'data': [
         'views/website_accommodation_menu.xml',
         'views/accommodation_form_templates.xml',
     ],
     'assets': {
-        'web.assets_backend': [
+        'web.assets_frontend': [
             'website_hotel_accommodation/static/src/js/accommodation.js',
         ]
     }
