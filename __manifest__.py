@@ -12,7 +12,7 @@
     'author': "Minions 6",
 
     'version': '15.0.1.0',
-    'depends': ['website', 'web', 'hotel_room_management'],
+    'depends': ['website', 'hotel_room_management'],
 
     'data': [
         'views/website_accommodation_menu.xml',
